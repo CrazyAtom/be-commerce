@@ -2,6 +2,7 @@
 
 ## 프로젝트 개요
 상품 가격을 관리하고 통계를 제공하는 Spring Boot 기반 웹 서비스입니다.
+이 서비스는 브랜드와 카테고리별로 상품 가격을 조회하고 관리할 수 있는 기능을 제공합니다. 사용자는 특정 카테고리의 최저가 및 최고가를 조회하고, 브랜드별 최저가를 확인하며, 상품 가격을 수정할 수 있습니다.
 
 ## 기술 스택
 - Backend: Java 17, Spring Boot
@@ -48,6 +49,18 @@ project/
 
 ## 데이터 초기화
 초기 데이터는 `import.sql`을 통해 로드됩니다.
+
+## gradle 빌드 및 실행
+1. Gradle 빌드
+   ```bash
+   ./gradlew build
+   ```
+2. 애플리케이션 실행
+   ```bash
+    ./gradlew bootRun
+    ```
+3. 웹 브라우저에서 `http://localhost:8080`에 접속하여 애플리케이션을 확인합니다.
+4. API 테스트는 Postman 또는 curl을 사용하여 수행할 수 있습니다.
 
 ## 참고사항
 - 카테고리: TOPS, OUTERWEAR, PANTS, SNEAKERS, BAG, HAT, SOCKS, ACCESSORIES
