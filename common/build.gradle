@@ -1,0 +1,13 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    compileOnly "org.projectlombok:lombok:${rootProject.ext.lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${rootProject.ext.lombokVersion}"
+
+    testImplementation "org.springframework.boot:spring-boot-starter-test:${rootProject.ext.springBootVersion}"
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher:${rootProject.ext.junitVersion}"
+}
+
+tasks.register("prepareKotlinBuildScriptModel"){}

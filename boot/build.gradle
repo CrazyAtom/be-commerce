@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+bootJar {
+    mainClass.set('com.crazyatom.boot.BootApplication')
+}
+
+dependencies {
+    implementation project(':common')
+    implementation project(':domain')
+    implementation project(':web')
+
+    implementation "org.springframework.boot:spring-boot-starter-web:${rootProject.ext.springBootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa:${rootProject.ext.springBootVersion}"
+    implementation "org.springframework.retry:spring-retry:${rootProject.ext.springRetryVersion}"
+//    implementation "com.h2database:h2:${rootProject.ext.h2Version}"
+
+    compileOnly "org.projectlombok:lombok:${rootProject.ext.lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${rootProject.ext.lombokVersion}"
+
+    runtimeOnly "com.h2database:h2:${rootProject.ext.h2Version}"
+
+    testImplementation "org.springframework.boot:spring-boot-starter-test:${rootProject.ext.springBootVersion}"
+//    testRuntimeOnly "org.junit.platform:junit-platform-launcher:${rootProject.ext.junitVersion}"
+}
+
+tasks.register("prepareKotlinBuildScriptModel") {}

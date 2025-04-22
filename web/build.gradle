@@ -1,0 +1,11 @@
+plugins {
+    id 'java'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter-thymeleaf:${rootProject.ext.springBootVersion}"
+    implementation "org.springframework.boot:spring-boot-starter-web:${rootProject.ext.springBootVersion}"
+}
+
+tasks.register("prepareKotlinBuildScriptModel") {}

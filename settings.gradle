@@ -1,0 +1,5 @@
+rootProject.name = 'be-commerce'
+include 'boot'
+include 'common'
+include 'domain'
+include 'web'
