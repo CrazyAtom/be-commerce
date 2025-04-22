@@ -61,6 +61,7 @@ project/
     ```
 3. 웹 브라우저에서 `http://localhost:8080`에 접속하여 애플리케이션을 확인합니다.
 4. API 테스트는 Postman 또는 curl을 사용하여 수행할 수 있습니다.
+5. API 문서는 Swagger를 통해 확인할 수 있습니다. `http://localhost:8080/swagger-ui/index.html`
 
 ## 참고사항
 - 카테고리: TOPS, OUTERWEAR, PANTS, SNEAKERS, BAG, HAT, SOCKS, ACCESSORIES
