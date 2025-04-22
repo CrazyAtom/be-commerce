@@ -26,6 +26,7 @@ allprojects {
         junitVersion = '5.9.2'
         mockitoVersion = '5.15.2'
         apacheCommons3Version = '3.12.0'
+        springdocVersion = '2.3.0'
     }
 }
 
