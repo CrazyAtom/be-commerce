@@ -37,6 +37,10 @@ subprojects {
         mavenCentral()
     }
 
+    dependencies {
+        implementation "org.springdoc:springdoc-openapi-starter-webmvc-ui:${springdocVersion}"
+    }
+
     sourceCompatibility = '17'
     targetCompatibility = '17'
 }
